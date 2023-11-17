@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap');
+
+.hero-section {
+  padding: 2.188rem 1.5rem;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.text-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 3.877rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1.563rem;
+}
+
+.hero-title {
+  color: #111;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 3.877rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  color: #666;
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 25.428px;
+  margin-bottom: 3.063rem;
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  font-family: "Urbanist", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid #000;
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding: 3rem 4.5rem;
+  }
+
+  .hero {
+    display: flex;
+  }
+
+  .title {
+    font-size: 8.125rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(269deg, #f43366 0.72%, #3c33ef 103.58%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-title {
+    color: #000 !important;
+    font-size: 8.125rem;
+    font-weight: 800;
+    letter-spacing: -4.55px;
+    text-transform: uppercase;
+  }
+
+  .text-button {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .hero-image {
+    order: 2;
+    width: 50%;
+  }
+
+  .hero-subtitle {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-section {
+    padding: 3.938rem 9.375rem;
+  }
+
+  .hero-title {
+    letter-spacing: -8.5px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    line-height: 33px;
+  }
+
+  .hero-btn {
+    font-size: 1.125rem;
+  }
+}

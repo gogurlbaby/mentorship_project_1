@@ -1,14 +1,18 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --first-primary-color: #181818;
+  --second-primary-color: #4b34e4;
+  --alternate-primary-color: #ee346b;
+  --first-secondary-color: #c96;
+  --second-secondary-color: #666;
+  --third-secondary-color: #fff;
 }
 
 body {
-    height: 100vh;
-    background-color: brown;
-}
-
-.hello {
-    color: #FFF;
+  height: 100vh;
 }
