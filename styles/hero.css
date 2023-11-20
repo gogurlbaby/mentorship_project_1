@@ -32,6 +32,10 @@
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+.highlight-letter {
+  color: #111;
+}
+
 .hero-subtitle {
   color: #666;
   text-align: center;
