@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600&display=swap');
 
 .statistics {
-    display: none;
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -19,7 +19,7 @@
     font-size: 3.375rem;
     font-weight: 600;
     line-height: 140%;
-    background: linear-gradient(180deg, #5735DC 0%, #E53574 91.07%);
+    background: linear-gradient(180deg, #5735dc 0%, #e53574 91.07%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -28,10 +28,9 @@
 
   .description {
     color: #000;
-    font-family:"Plus Jakarta Sans", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 0.75rem;
     font-weight: 600;
-    line-height: 140%; 
   }
 }
 
