@@ -6,38 +6,108 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/trust.css">
+    <link rel="stylesheet" href="./styles/features.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="./js/navbar.js" defer></script>
     <title>Project 1-Portfolio</title>
 </head>
 <body>
     <!-- Navbar  -->
-    <nav>
+    <header>
+      <nav>
         <div class="navbar">
-            <img src="./images/xest-folio.svg" alt="logo" class="logo">
-            <div>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="#blogs">Blogs</a></li>
-                    <li><a href="#blogs"> FAQ</a></li>
-                    <li>
-                      <button type="button" class="navbar-btn">Contact Me</button>
-                    </li>
-                </ul>
+          <div class="menu-button">
+            <i data-feather="menu" onclick="showOverlay()"></i> 
+          </div>
+          <img src="./images/xest-folio.svg" alt="logo" class="logo">
+
+          <!-- Overlay for Small Screens-->
+          <div id="overlay">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Service</a></li>
+              <li><a href="#blogs">Blogs</a></li>
+              <li><a href="#blogs"> FAQ</a></li>
+              <li>
+                <button type="button" class="btn navbar-btn">Contact Me</button>
+              </li>
+            </ul>  
+            <div class="close_icon">
+              <i data-feather="x" onclick="hideOverlay()"></i>
             </div>
+          </div>
         </div>
-    </nav>
+      </nav>
+    </header>
 
     <!-- Hero -->
     <section class="hero-section">
         <div class="hero">
           <img src="./images/hero.svg" alt="hero-image" class="hero-image">
           <div class="text-button">
-            <h1 class="title">Miami <span class="hero-title">Walker</span></h1>
+            <h1 class="title">
+                Miami 
+              <span class="hero-title">
+                Walke
+              </span><span 
+              class="highlight-letter">
+              r
+             </span>
+           </h1>
             <p class="hero-subtitle">
              Award Wining product designer based in Georgia. 
              We create user-friendly interfaces for fast-growing startups.
             </p>
-            <button type="button" class="hero-btn">Book A Call</button>
+            <button type="button" class="btn hero-btn">Book A Call</button>
+          </div>
+        </div>
+    </section>
+     <!-- Trusted Companies Section -->
+    <section class="trusted-section">
+      <p class="trusted">Trusted By</p>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-logo"><img src="./images/logo-05.svg" alt="Company 1"></div>
+          <div class="carousel-logo"><img src="./images/logo-04.svg" alt="Company 2"></div>
+          <div class="carousel-logo"><img src="./images/logo-03.svg" alt="Comapany 3"></div>
+          <div class="carousel-logo"><img src="./images/logo-02.svg" alt="Company 4"></div>
+          <div class="carousel-logo"><img src="./images/logo-01.svg" alt="Company 5"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Features Section -->
+    <section class="features-section">
+      <div class="">
+        <h4 class="heading features">Features</h4>
+        <h2 class="giving-business">Giving Your Business Some Great Ideas</h2>
+        <p class="business-description">
+        Every designer needs the right tools to do the perfect job. 
+        Thankfully, we can do that. I design products that are more than pretty. 
+        I make them shippable and usable.
+        </p>
+        <button class="btn features-btn">Contact US</button>
+      </div>
+        <div class="product-features">
+          <div class="product item1">
+            <img src="./images/Features/image-6.svg" alt="Features Image" class="product-image">
+            <h4 class="product-title">UX Experience</h4>
+            <p class="product-description">I design products that are more than pretty. I make them  usable.</p>
+          </div>
+          <div class="product item2">
+            <img src="./images/Features/image-19.svg" alt="Features Image" class="product-image">
+            <h4 class="product-title">Product Analysis</h4>
+            <p class="product-description">I design products that are more than pretty. I make them  usable.</p>
+          </div>
+          <div class="product item3">
+            <img src="./images/Features/image-18.svg" alt="Features Image" class="product-image">
+            <h4 class="product-title">UI Design</h4>
+            <p class="product-description">I design products that are more than pretty. I make them  usable.</p>
+          </div>
+          <div class="product item4">
+            <img src="./images/Features/image-20.svg" alt="Features Image" class="product-image">
+            <h4 class="product-title">Product Design</h4>
+            <p class="product-description">I design products that are more than pretty. I make them  usable.</p>
           </div>
         </div>
     </section>
