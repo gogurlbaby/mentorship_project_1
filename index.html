@@ -3,9 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/trust.css">
+    <link rel="stylesheet" href="./styles/features.css">
+    <link rel="stylesheet" href="./styles/statistics.css">
+    <link rel="stylesheet" href="./styles/portfolio.css">
+    <link rel="stylesheet" href="./styles/blog.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="./js/navbar.js" defer></script>
     <title>Project 1-Portfolio</title>
 </head>
 <body>
-    <h1>Advanced CSS</h1>
+    <!-- Navbar  -->
+    <header>
+      <nav>
+        <div class="navbar">
+          <div class="menu-button">
+            <i data-feather="menu" onclick="showOverlay()"></i> 
+          </div>
+          <img src="./images/xest-folio.svg" alt="logo" class="logo">
+
+          <!-- Overlay for Small Screens-->
+          <div id="overlay">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Service</a></li>
+              <li><a href="#blogs">Blogs</a></li>
+              <li><a href="#blogs"> FAQ</a></li>
+              <li>
+                <button type="button" class="btn navbar-btn">Contact Me</button>
+              </li>
+            </ul>  
+            <div class="close_icon">
+              <i data-feather="x" onclick="hideOverlay()"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero-section">
+        <div class="hero">
+          <img src="./images/hero.svg" alt="hero-image" class="hero-image">
+          <div class="text-button">
+            <h1 class="title">
+                Miami 
+              <span class="hero-title">
+                Walke
+              </span><span 
+              class="highlight-letter">
+              r
+             </span>
+           </h1>
+            <p class="hero-subtitle">
+             Award Wining product designer based in Georgia. 
+             We create user-friendly interfaces for fast-growing startups.
+            </p>
+            <button type="button" class="btn hero-btn">Book A Call</button>
+          </div>
+        </div>
+    </section>
+     <!-- Trusted Companies Section -->
+    <section class="trusted-section">
+      <p class="trusted">Trusted By</p>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-logo"><img src="./images/logo-05.svg" alt="Company 1"></div>
+          <div class="carousel-logo"><img src="./images/logo-04.svg" alt="Company 2"></div>
+          <div class="carousel-logo"><img src="./images/logo-03.svg" alt="Comapany 3"></div>
+          <div class="carousel-logo"><img src="./images/logo-02.svg" alt="Company 4"></div>
+          <div class="carousel-logo"><img src="./images/logo-01.svg" alt="Company 5"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Features Section -->
+    <section class="features-section">
+      <div>
+        <h4 class="heading features">Features</h4>
+        <h2 class="section-title">Giving Your Business Some Great Ideas</h2>
+        <p class="business-description">
+        Every designer needs the right tools to do the perfect job. 
+        Thankfully, we can do that. I design products that are more than pretty. 
+        I make them shippable and usable.
+        </p>
+        <button class="btn features-btn">Contact US</button>
+      </div>
+        <div class="product-features">
+          <div class="product item1">
+            <img src="./images/Features/image-6.svg" alt="Features Image" class="product-image">
+            <h4 class="product-title">UX Experience</h4>
+            <p class="product-description">I design products that are more than pretty. I make them  usable.</p>
+          </div>
+          <div class="product item2">
+            <img src="./images/Features/image-19.svg" alt="Features Image" class="product-image">
+            <h4 class="product-title">Product Analysis</h4>
+            <p class="product-description">I design products that are more than pretty. I make them  usable.</p>
+          </div>
+          <div class="product item3">
+            <img src="./images/Features/image-18.svg" alt="Features Image" class="product-image">
+            <h4 class="product-title">UI Design</h4>
+            <p class="product-description">I design products that are more than pretty. I make them  usable.</p>
+          </div>
+          <div class="product item4">
+            <img src="./images/Features/image-20.svg" alt="Features Image" class="product-image">
+            <h4 class="product-title">Product Design</h4>
+            <p class="product-description">I design products that are more than pretty. I make them  usable.</p>
+          </div>
+        </div>
+    </section>
+    <!-- Statistics for Large Screens -->
+    <div class="statistics">
+     <div>
+       <p class="number">12K+</p>
+       <p class="description">Project Complete</p>
+     </div>
+     <div>
+      <p class="number">7K+</p>
+      <p class="description">Happy Client</p>
+     </div>
+     <div>
+      <p class="number">10+</p>
+      <p  class="description">Years Experience</p>
+     </div>
+     <div>
+      <p class="number">270+</p>
+      <p class="description">Win Awards</p>
+     </div>
+    </div>
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+      <div class="heading-btn_container">
+        <div>
+          <h4 class="heading portfolio">Portfolio</h4>
+          <h2 class="section-title best-works">Some Of Our Best Works</h2>
+        </div>
+        <button class="btn portfolio-btn">Load More</button>
+      </div>
+      <!-- For small screens -->
+      <div class="images-container">
+        <img src="./images/Portfolio/rectangle-38.svg" alt="Portfolio Image" class="portfolio-image">
+        <img src="./images/Portfolio/rectangle-39.svg" alt="Portfolio Image" class="portfolio-image">
+        <img src="./images/Portfolio/rectangle-40.svg" alt="Portfolio Image" class="portfolio-image">
+      </div>
+      <!-- For Large screens -->
+      <div class="portfolio-carousel-container">
+        <div class="portfolio-carousel">
+          <img src="./images/Portfolio/rectangle-38.svg" alt="Portfolio Image" class="carousel-image">
+          <img src="./images/Portfolio/rectangle-39.svg" alt="Portfolio Image" class="carousel-image">
+          <img src="./images/Portfolio/rectangle-40.svg" alt="Portfolio Image" class="carousel-image">
+          <img src="./images/Portfolio/rectangle-38.svg" alt="Portfolio Image" class="carousel-image">
+          <img src="./images/Portfolio/rectangle-39.svg" alt="Portfolio Image" class="carousel-image">
+          <img src="./images/Portfolio/rectangle-40.svg" alt="Portfolio Image" class="carousel-image">
+        </div>
+        <div class="portfolio-carousel">
+          <img src="./images/Portfolio/rectangle-38.svg" alt="Portfolio Image" class="carousel-image">
+          <img src="./images/Portfolio/rectangle-39.svg" alt="Portfolio Image" class="carousel-image">
+          <img src="./images/Portfolio/rectangle-40.svg" alt="Portfolio Image" class="carousel-image">
+          <img src="./images/Portfolio/rectangle-38.svg" alt="Portfolio Image" class="carousel-image">
+          <img src="./images/Portfolio/rectangle-39.svg" alt="Portfolio Image" class="carousel-image">
+          <img src="./images/Portfolio/rectangle-40.svg" alt="Portfolio Image" class="carousel-image">
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section -->
+    <section class="blog-section">
+      <div class="heading-btn_container">
+        <div>
+          <h4 class="heading blog">Latest Blog</h4>
+          <h2 class="section-title news">Check Some of Latest News & Articles</h2>
+        </div>
+        <button class="btn blog-btn">Load More</button>
+      </div>
+      <div class="blog-content-container">
+        <div class="blog-image-container">
+          <img src="./images/Blog/image-16.svg" alt="Blog Image" class="blog-image">
+        </div>
+        <!-- <div class="blog-item-container">
+          <div class="ui-date">
+            <p>UI Design</p>
+            <span>|</span>
+            <p>22 May  2023</p>
+          </div>
+            <h4 class="blog-heading">What is UI Design in Front End Design?</h4>
+            <p class="blog-description">
+             But I must explain to you how all this mistaken idea of denouncing pleasure and 
+             praising pain was born and I will give you a complete account of the system
+            </p>
+            <button class="read-more-btn">
+             Read More
+             <i data-feather="external-link"></i> 
+            </button>
+        </div> -->
+      <div class="blog-image-container">
+        <img src="./images/Blog/image-16.svg" alt="Blog Image" class="blog-image">
+      </div>
+      <!-- <div class="blog-item-container">
+        <div class="ui-date">
+          <p>UI Design</p>
+          <span>|</span>
+          <p>22 May  2023</p>
+        </div>
+          <h4 class="blog-heading">What is UI Design in Front End Design?</h4>
+          <p class="blog-description">
+           But I must explain to you how all this mistaken idea of denouncing pleasure and 
+           praising pain was born and I will give you a complete account of the system
+          </p>
+          <button class="read-more-btn">
+           Read More
+           <i data-feather="external-link"></i> 
+          </button>
+      </div> -->
+    </div>
+    </section>
 </body>
 </html>
