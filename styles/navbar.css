@@ -37,6 +37,7 @@ ul li {
 
 .navbar-btn {
   font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 1.25rem 1.875rem;
 }
 
 /* Media Queries to Show Menu Button on Small Screens */
