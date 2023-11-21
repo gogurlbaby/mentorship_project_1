@@ -48,7 +48,7 @@
     display: flex;
     gap: 1rem;
     margin-top: 4.063rem;
-    width: 300%;
+    /* width: 300%; */
     animation: carouselAnimation 20s infinite;
   }
   
@@ -58,7 +58,7 @@
     width: 100%;
     margin-bottom: 1.625rem;
   }
-  
+
   @keyframes carouselAnimation {
     0% { transform: translateX(0%); }
     33.33% { transform: translateX(-100%); }
