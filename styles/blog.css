@@ -23,11 +23,14 @@
   width: 100%;
 }
 
+.blog-image-container:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
 .blog-item-container {
-    padding: 2rem;
-    padding: 0.5rem 1.5rem ;
-    background-color: #181818;
-    text-align: left;
+  padding: 0.5rem 1.5rem;
+  background-color: #181818;
+  text-align: left;
 }
 
 .ui-date {
@@ -41,11 +44,11 @@
 }
 
 .blog-heading {
-  color: #FFF;
+  color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 1.125rem;
   font-weight: 600;
-  line-height: 135%; 
+  line-height: 135%;
   margin-bottom: 0.688rem;
 }
 
@@ -60,7 +63,7 @@
 }
 
 .read-more-btn {
-  color: #FFF;
+  color: #fff;
   background-color: transparent;
   border: none;
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -68,4 +71,17 @@
   font-weight: 700;
   letter-spacing: 1.656px;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .blog-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.188rem;
+  }
+
+  .blog-image-container:not(:first-child) {
+    margin-top: 0;
+  }
 }

@@ -22,13 +22,15 @@
 }
 
 @media (max-width: 767px) {
-  .carousel, .carousel-logo {
+  .portfolio-carousel,
+  .carousel-image {
     display: none;
   }
 }
 
 @media (min-width: 768px) {
-  .images-container, .portfolio-image {
+  .images-container,
+  .portfolio-image {
     display: none;
   }
   
@@ -36,15 +38,21 @@
     padding: 10.75rem 4.688rem 9.25rem;
   }
 
-  .carousel {
+  .portfolio-carousel-container {
+    width: 80%;
+    margin: 1.688rem auto;
+    overflow: hidden;
+  }
+
+  .portfolio-carousel {
     display: flex;
     gap: 1rem;
     margin-top: 4.063rem;
-    width: 120%;
+    width: 300%;
     animation: carouselAnimation 20s infinite;
   }
   
-  .carousel-logo {
+  .carousel-image {
     flex: 0 0 33.33%;
     box-sizing: border-box;
     width: 100%;
@@ -57,5 +65,4 @@
     66.66% { transform: translateX(-200%); }
     100% { transform: translateX(0%); }
   }
-  
 }
