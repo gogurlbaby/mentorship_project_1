@@ -33,7 +33,7 @@
   .portfolio-image {
     display: none;
   }
-  
+
   .portfolio-section {
     padding: 10.75rem 4.688rem 9.25rem;
   }
@@ -48,7 +48,6 @@
     display: flex;
     gap: 1rem;
     margin-top: 4.063rem;
-    /* width: 300%; */
     animation: carouselAnimation 20s infinite;
   }
   
