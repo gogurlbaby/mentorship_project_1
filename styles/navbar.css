@@ -21,6 +21,7 @@ nav {
 ul li {
   list-style: none;
   margin-top: 2rem;
+  cursor: pointer;
 }
 
 .navbar a {
@@ -73,6 +74,10 @@ ul li {
 
 /* Media Queries for Large Screens */
 @media (min-width: 768px) {
+  .nav {
+    padding: 1.5rem 4.5rem;
+  }
+
   .navbar {
     display: flex;
     justify-content: space-between;

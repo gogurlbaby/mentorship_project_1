@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-.footer {
+.footer-mobile {
   padding-bottom: 2.313rem;
 }
 
@@ -13,17 +13,9 @@
   margin-bottom: 1.25rem;
 }
 
-.privacy1-terms {
-  display: none;
-}
-
-.hr-1 {
+.hr {
   background: #bbb;
   margin-bottom: 1.25rem;
-}
-
-.hr-2 {
-  display: none;
 }
 
 .footer-subtitle {
@@ -31,17 +23,17 @@
   font-family: "Poppins", sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
+  text-align: center;
+}
+
+.footer-desktop {
+  display: none;
 }
 
 @media (min-width: 768px) {
-  .hr-1,
-  .privacy-terms {
-    display: none;
-  }
-
-  .hr-2 {
+  .footer-desktop {
     display: block;
-    background: #bbb;
+    padding: 2.313rem 4.5rem;
   }
 
   .footer-container {
@@ -49,17 +41,40 @@
     justify-content: space-between;
   }
 
-  .privacy1-terms {
-    display: block;
+  .privacy-terms {
     color: #acacac;
+    text-align: center;
     font-family: "Poppins", sans-serif;
     font-size: 0.875rem;
     font-weight: 500;
     margin-bottom: 1.25rem;
-    text-align: right;
+  }
+
+  .hr {
+    background: #bbb;
+    width: 100%;
   }
 
   .footer-subtitle {
-    text-align: left;
+    color: #acacac;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .footer-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-desktop {
+    padding: 2.313rem 9.375rem;
+  }
+
+  .privacy-terms,
+  .footer-subtitle {
+    font-size: 1.125rem;
   }
 }

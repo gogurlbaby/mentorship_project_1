@@ -72,10 +72,12 @@
 
   .item1 {
     order: 1;
+    margin-top: 1.611rem;
   }
 
   .item2 {
     order: 3;
+    margin-top: 2.36rem;
   }
 
   .item3 {
@@ -95,5 +97,13 @@
   .business-description {
     font-size: 16px;
     margin-bottom: 2.688rem;
+  }
+
+  .item1 {
+    margin-top: 2.5rem;
+  }
+
+  .item2 {
+    margin-top: 3.063rem;
   }
 }

@@ -28,6 +28,10 @@
   font-size: 1.125rem;
   font-weight: 500;
   border: 1px solid #000;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
 }
 
 .heading {

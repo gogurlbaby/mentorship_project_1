@@ -73,13 +73,14 @@
     <section class="trusted-section">
       <p class="trusted">Trusted By</p>
       <div class="carousel-container">
-        <div class="carousel">
-          <!-- use list for images -->
-          <img src="./images/logo-05.svg" alt="Company 1" class="carousel-logo">
-          <img src="./images/logo-04.svg" alt="Company 2" class=" carousel-logo">
-          <img src="./images/logo-03.svg" alt="Comapany 3" class="carousel-logo">
-          <img src="./images/logo-02.svg" alt="Company 4" class="carousel-logo">
-          <img src="./images/logo-01.svg" alt="Company 5" class="carousel-logo">
+        <div>
+          <ul class="carousel">
+            <li><img src="./images/logo-05.svg" alt="Company 1" class="carousel-logo"></li>
+            <li><img src="./images/logo-04.svg" alt="Company 2" class=" carousel-logo"></li>
+            <li><img src="./images/logo-03.svg" alt="Comapany 3" class="carousel-logo"></li>
+            <li><img src="./images/logo-02.svg" alt="Company 4" class="carousel-logo"></li>
+            <li><img src="./images/logo-01.svg" alt="Company 5" class="carousel-logo"></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -172,7 +173,7 @@
       <div class="heading-btn_container">
         <div>
           <h4 class="heading blog">Latest Blog</h4>
-          <h2 class="section-title news">Check Some of Latest News & Articles</h2>
+          <h2 class="section-title news">Check Some of Latest <br/> News & Articles</h2>
         </div>
         <button type="button" class="btn blog-btn">Load More</button>
       </div>
@@ -180,7 +181,7 @@
         <div class="blog-image-container">
           <img src="./images/Blog/image-16.svg" alt="Blog Image" class="blog-image">
         </div>
-        <!-- <div class="blog-item-container">
+        <div class="blog-item-container">
           <div class="ui-date">
             <p>UI Design</p>
             <span>|</span>
@@ -193,13 +194,13 @@
             </p>
             <button type="button" class="read-more-btn">
              Read More
-             <i data-feather="external-link"></i> 
+             <i data-feather="arrow-up-right" width="15px" class="arrow-up"></i> 
             </button>
-        </div> -->
+        </div>
       <div class="blog-image-container">
         <img src="./images/Blog/image-16.svg" alt="Blog Image" class="blog-image">
       </div>
-      <!-- <div class="blog-item-container">
+      <div class="blog-item-container">
         <div class="ui-date">
           <p>UI Design</p>
           <span>|</span>
@@ -212,9 +213,9 @@
           </p>
           <button class="read-more-btn">
            Read More
-           <i data-feather="external-link"></i> 
+           <i data-feather="arrow-up-right"  width="15px" class="arrow-up"></i> 
           </button>
-      </div> -->
+      </div>
     </div>
     </section>
     <!-- Testimonials Section -->
@@ -324,17 +325,21 @@
       </div>
     </section>
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer-mobile">
       <div class="footer-container">
         <p class="privacy-terms">
          Privacy Policy  |  Terms and Conditions
         </p>
-        <hr class="hr-1">
-        <hr class="hr-2">
+        <hr class="hr">
         <p class="footer-subtitle">© 2023 Ideapeel Inc. All Rights Reserved</p>
-        <p class="privacy1-terms">
-          Privacy Policy  |  Terms and Conditions
-         </p>
+      </div>
+    </footer>
+
+    <footer class="footer-desktop">
+      <hr class="hr">
+      <div class="footer-container">
+        <p class="footer-subtitle">© 2023 Ideapeel Inc. All Rights Reserved</p>
+        <p class="privacy-terms">Privacy Policy  |  Terms and Conditions</p>
       </div>
     </footer>
 </body>

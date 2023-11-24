@@ -5,53 +5,40 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5.625rem 1.5rem 0;
+  padding: 5.625rem 2rem 0;
 }
 
-.trust {
+.trusted {
   color: #12141d;
   text-align: center;
   font-family: "Inter", sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: 0.771px;
-}
-
-.carousel-container {
-  width: 80%;
-  margin: 1.688rem auto;
-  overflow: hidden;
+  margin-bottom: 1.5rem;
 }
 
 .carousel {
   display: flex;
-  width: 100%;
-  animation: carouselAnimation 35s infinite;
+  gap: 1rem;
 }
 
 .carousel-logo {
-  flex: 0 0 33.33%;
-  box-sizing: border-box;
-  margin: 0 1rem;
   width: 100%;
-}
-
-@keyframes carouselAnimation {
-  0% { transform: translateX(0%); }
-  33.33% { transform: translateX(-100%); }
-  66.66% { transform: translateX(-200%); }
-  100% { transform: translateX(0%); }
 }
 
 @media (min-width: 768px) {
   .trusted-section {
     padding: 6.5rem 4.5rem 0;
   }
+
+  .carousel {
+    gap: 2.5rem;
+  }
 }
 
 @media (min-width: 1200px) {
   .carousel {
-    width: 100%;
-    max-width: 50%;
+    gap: 5rem;
   }
 }
