@@ -65,9 +65,11 @@
     order: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: start;
-    margin-top: 5rem;
+    margin-top: 12rem;
+    position: relative;
+    left: 65px;
   }
 
   .hero-image {
@@ -95,18 +97,15 @@
     -webkit-text-fill-color: #000;
   }
 
-  span {
-    position: relative;
-    left: 5rem;
-    text-align: left;
-  }
-
   .highlight-letter {
     -webkit-text-fill-color: var(--white-color);
   }
 
   .hero-subtitle {
     text-align: left;
+    padding: 0 5rem;
+    position: relative;
+    right: 70px;
   }
 }
 
@@ -115,12 +114,13 @@
     padding: 3.938rem 9.375rem;
   }
 
-  .hero-title {
-    letter-spacing: -8.5px;
+  .title {
+    font-size: 9rem;
   }
 
-  span {
-    left: 7rem;
+  .hero-title {
+    font-size: 9rem;
+    letter-spacing: -8.5px;
   }
 
   .hero-subtitle {

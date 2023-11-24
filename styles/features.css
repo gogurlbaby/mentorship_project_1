@@ -69,6 +69,23 @@
     gap: 1.5rem;
     max-width: 800;
   }
+
+  .item1 {
+    order: 1;
+  }
+
+  .item2 {
+    order: 3;
+  }
+
+  .item3 {
+    order: 2;
+   
+  }
+
+  .item4 {
+    order: 4;
+  }
 }
 
 @media (min-width: 1200px) {

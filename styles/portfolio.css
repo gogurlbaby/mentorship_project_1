@@ -22,8 +22,8 @@
 }
 
 @media (max-width: 767px) {
-  .portfolio-carousel,
-  .carousel-image {
+  .portfolio-container,
+  .portfolio-images {
     display: none;
   }
 }
@@ -35,33 +35,23 @@
   }
 
   .portfolio-section {
-    padding: 10.75rem 4.688rem 9.25rem;
+    padding: 10.75rem 4.5rem 9.25rem;
   }
 
-  .portfolio-carousel-container {
-    width: 80%;
-    margin: 1.688rem auto;
-    overflow: hidden;
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.375rem;
   }
 
-  .portfolio-carousel {
-    display: flex;
-    gap: 1rem;
-    margin-top: 4.063rem;
-    animation: carouselAnimation 20s infinite;
-  }
-
-  .carousel-image {
-    flex: 0 0 33.33%;
-    box-sizing: border-box;
+  .portfolio-images {
     width: 100%;
-    margin-bottom: 1.625rem;
-  }
-
-  @keyframes carouselAnimation {
-    0% { transform: translateX(0%); }
-    33.33% { transform: translateX(-100%); }
-    66.66% { transform: translateX(-200%); }
-    100% { transform: translateX(0%); }
   }
 }
+
+@media (min-width: 1200px) {
+  .portfolio-section {
+    padding: 10.75rem 8.5rem 9.25rem;
+  }
+}
+

@@ -11,15 +11,11 @@ nav {
 }
 
 .close_icon {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  color: var(--white-color);
+  display: none;
 }
 
 .navbar ul {
   text-align: center;
-  padding: 20px;
 }
 
 ul li {
@@ -42,10 +38,23 @@ ul li {
 
 /* Media Queries to Show Menu Button on Small Screens */
 @media (max-width: 767px) {
-  .menu-button {
+  .navbar-flex {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-button {
+    display: block;
     cursor: pointer;
+  }
+
+  .close_icon {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: var(--white-color);
   }
 
   #overlay {
@@ -64,10 +73,6 @@ ul li {
 
 /* Media Queries for Large Screens */
 @media (min-width: 768px) {
-  nav {
-    padding: 1.5rem;
-  }
-
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -81,6 +86,10 @@ ul li {
     gap: 2.25rem;
   }
 
+  ul li {
+    margin-top: 0 !important;
+  }
+
   .navbar a {
     color: var(--navbar-list-items-color);
   }
@@ -88,7 +97,7 @@ ul li {
 
 @media (min-width: 1200px) {
   nav {
-    padding: 0 9.375rem;
+    padding: 1.5rem 9.375rem;
   }
 }
 

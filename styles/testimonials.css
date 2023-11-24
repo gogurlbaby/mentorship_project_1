@@ -65,41 +65,22 @@
 
   .testimonial-container {
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
   }
 
   .image-text-flex,
   .image-rate-flex {
-    gap: 2rem;
+    gap: 1rem;
   }
 
-  .testimonial-carousel-container {
-    width: 80%;
-    margin: 1.688rem auto;
-    overflow: hidden;
-  }
-
-  .testimonial-carousel {
-    width: 300%;
-    animation: carouselAnimation 20s infinite;
-  }
-
-  .testimonial-carousel-logo {
-    flex: 0 0 33.33%;
-    box-sizing: border-box;
-  }
-
-  @keyframes carouselAnimation {
-    0% { transform: translateX(0%); }
-    33.33% { transform: translateX(-100%); }
-    66.66% { transform: translateX(-200%); }
-    100% { transform: translateX(0%); }
+  .testimony-container {
+    
   }
 }
 
 @media (min-width: 1200px) {
   .testimonial-section {
-    padding: 10rem 0;
+    padding: 8.5rem 0;
   }
 
   .name {

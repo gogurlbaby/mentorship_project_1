@@ -25,13 +25,15 @@
 
 .carousel {
   display: flex;
-  width: 300%;
-  animation: carouselAnimation 20s infinite;
+  width: 100%;
+  animation: carouselAnimation 35s infinite;
 }
 
 .carousel-logo {
   flex: 0 0 33.33%;
   box-sizing: border-box;
+  margin: 0 1rem;
+  width: 100%;
 }
 
 @keyframes carouselAnimation {
@@ -43,6 +45,14 @@
 
 @media (min-width: 768px) {
   .trusted-section {
-    padding: 6.5rem 3.875rem;
+    padding: 6.5rem 4.5rem 0rem;
   }
 }
+
+@media (min-width: 1200px) {
+  .carousel {
+    width: 100%;
+    max-width: 50%;
+  }
+}
+

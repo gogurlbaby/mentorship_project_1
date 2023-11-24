@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./styles/blog.css">
     <link rel="stylesheet" href="./styles/testimonials.css">
     <link rel="stylesheet" href="./styles/faq.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="./js/navbar.js" defer></script>
     <title>Project 1-Portfolio</title>
@@ -22,12 +24,12 @@
     <header>
       <nav>
         <div class="navbar">
-          <!-- put logo and menu in same div -->
+         <div class="navbar-flex">
+          <img src="./images/xest-folio.svg" alt="logo" class="logo">
           <div class="menu-button">
             <i data-feather="menu" onclick="showOverlay()"></i> 
           </div>
-          <img src="./images/xest-folio.svg" alt="logo" class="logo">
-
+         </div>
           <!-- Overlay for Small Screens-->
           <div id="overlay">
             <ul>
@@ -55,10 +57,8 @@
             <h1 class="title">
                 Miami 
               <span class="hero-title">
-                Walke
-              </span><span 
-              class="highlight-letter">
-              r
+                Walker
+                <!-- <span class="highlight-letter">r</span> -->
              </span>
            </h1>
             <p class="hero-subtitle">
@@ -74,11 +74,12 @@
       <p class="trusted">Trusted By</p>
       <div class="carousel-container">
         <div class="carousel">
-          <div class="carousel-logo"><img src="./images/logo-05.svg" alt="Company 1"></div>
-          <div class="carousel-logo"><img src="./images/logo-04.svg" alt="Company 2"></div>
-          <div class="carousel-logo"><img src="./images/logo-03.svg" alt="Comapany 3"></div>
-          <div class="carousel-logo"><img src="./images/logo-02.svg" alt="Company 4"></div>
-          <div class="carousel-logo"><img src="./images/logo-01.svg" alt="Company 5"></div>
+          <!-- use list for images -->
+          <img src="./images/logo-05.svg" alt="Company 1" class="carousel-logo">
+          <img src="./images/logo-04.svg" alt="Company 2" class=" carousel-logo">
+          <img src="./images/logo-03.svg" alt="Comapany 3" class="carousel-logo">
+          <img src="./images/logo-02.svg" alt="Company 4" class="carousel-logo">
+          <img src="./images/logo-01.svg" alt="Company 5" class="carousel-logo">
         </div>
       </div>
     </section>
@@ -120,19 +121,19 @@
     <!-- Statistics for Large Screens -->
     <div class="statistics">
      <div>
-       <p class="number">12K+</p>
+       <img src="./images/Statistics/k.svg" alt="">
        <p class="description">Project Complete</p>
      </div>
      <div>
-      <p class="number">7K+</p>
+      <img src="./images/Statistics/7k.svg" alt="">
       <p class="description">Happy Client</p>
      </div>
      <div>
-      <p class="number">10+</p>
+      <img src="./images/Statistics/10k.svg" alt="">
       <p  class="description">Years Experience</p>
      </div>
      <div>
-      <p class="number">270+</p>
+      <img src="./images/Statistics/270k.svg" alt="">
       <p class="description">Win Awards</p>
      </div>
     </div>
@@ -152,22 +153,17 @@
         <img src="./images/Portfolio/rectangle-40.svg" alt="Portfolio Image" class="portfolio-image">
       </div>
       <!-- For Large screens -->
-      <div class="portfolio-carousel-container">
-        <div class="portfolio-carousel">
-          <img src="./images/Portfolio/rectangle-38.svg" alt="Portfolio Image" class="carousel-image">
-          <img src="./images/Portfolio/rectangle-39.svg" alt="Portfolio Image" class="carousel-image">
-          <img src="./images/Portfolio/rectangle-40.svg" alt="Portfolio Image" class="carousel-image">
-          <img src="./images/Portfolio/rectangle-38.svg" alt="Portfolio Image" class="carousel-image">
-          <img src="./images/Portfolio/rectangle-39.svg" alt="Portfolio Image" class="carousel-image">
-          <img src="./images/Portfolio/rectangle-40.svg" alt="Portfolio Image" class="carousel-image">
-        </div>
-        <div class="portfolio-carousel">
-          <img src="./images/Portfolio/rectangle-38.svg" alt="Portfolio Image" class="carousel-image">
-          <img src="./images/Portfolio/rectangle-39.svg" alt="Portfolio Image" class="carousel-image">
-          <img src="./images/Portfolio/rectangle-40.svg" alt="Portfolio Image" class="carousel-image">
-          <img src="./images/Portfolio/rectangle-38.svg" alt="Portfolio Image" class="carousel-image">
-          <img src="./images/Portfolio/rectangle-39.svg" alt="Portfolio Image" class="carousel-image">
-          <img src="./images/Portfolio/rectangle-40.svg" alt="Portfolio Image" class="carousel-image">
+      <div class="portfolio-container">
+        <div class="portfolio">
+          <img src="./images/Portfolio/rectangle-38.svg" alt="Portfolio Image" class="portfolio-images">
+          <img src="./images/Portfolio/rectangle-39.svg" alt="Portfolio Image" class="portfolio-images">
+          <img src="./images/Portfolio/rectangle-40.svg" alt="Portfolio Image" class="portfolio-images">
+          <img src="./images/Portfolio/rectangle-38.svg" alt="Portfolio Image" class="portfolio-images">
+          <img src="./images/Portfolio/rectangle-39.svg" alt="Portfolio Image" class="portfolio-images">
+          <img src="./images/Portfolio/rectangle-40.svg" alt="Portfolio Image" class="portfolio-images">
+          <img src="./images/Portfolio/rectangle-38.svg" alt="Portfolio Image" class="portfolio-images">
+          <img src="./images/Portfolio/rectangle-39.svg" alt="Portfolio Image" class="portfolio-images">
+          <img src="./images/Portfolio/rectangle-40.svg" alt="Portfolio Image" class="portfolio-images">
         </div>
       </div>
     </section>
@@ -222,13 +218,13 @@
     </div>
     </section>
     <!-- Testimonials Section -->
-    <section class="testimonial-section">
+    <!-- <section class="testimonial-section">
       <div class="testimonial-text">
         <h4 class="heading testimonial-title">Testimonials</h4>
         <p class="section-title testimonial-subtitle">What our customer say</p>
       </div>
-      <div class="testimonial-container testimonial-carousel-container">
-      <div class="testimony-container testimonial-carousel">
+      <div class="testimonial-container">
+      <div class="testimony-container">
         <img src="./images/Testimonials/icon.svg" alt="icon" class="icon">
         <p class="testimony">“Now, i can track my business activity with easier and have a great understandable to operate the products</p>
         <div class="testimonial-flex">
@@ -243,7 +239,7 @@
         </div>
       </div>
 
-      <div class="testimony-container testimonial-carousel">
+      <div class="testimony-container ">
         <img src="./images/Testimonials/icon.svg" alt="icon" class="icon">
         <p class="testimony">“Now, i can track my business activity with easier and have a great understandable to operate the products</p>
         <div class="testimonial-flex">
@@ -258,7 +254,7 @@
         </div>
       </div>
 
-      <div class="testimony-container testimonial-carousel">
+      <div class="testimony-container">
         <img src="./images/Testimonials/icon.svg" alt="icon" class="icon">
         <p class="testimony">“Now, i can track my business activity with easier and have a great understandable to operate the products</p>
         <div class="testimonial-flex">
@@ -273,7 +269,7 @@
         </div>
       </div>
       </div>
-    </section>
+    </section> -->
     <!-- FAQ Section -->
     <section class="faq-section">
       <div class="faq-container">
@@ -306,5 +302,40 @@
         </div>
       </div>
     </section>
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="contact-container">
+        <h4 class="heading contact-title">Have you project in mind?</h4>
+        <h2 class="section-title contact-subtitle">Let’s Make Something Great Together!</h2>
+        <div class="contact-flex">
+          <p class="contact-text">CONTACT WITH US</p>
+          <img src="./images/Contact/arrow.svg" alt="arrow" class="arrow-icon">
+        </div>
+        <img src="./images/xest-folio.svg" alt="logo" class="contact-logo">
+        <div>
+          <ul class="socials">
+            <li><img src="./images/Contact/facebook.svg" alt="facebook" class="social-icon"></li>
+            <li><img src="./images/Contact/instagram.svg" alt="instagram-1" class="social-icon"></li>
+            <li><img src="./images/Contact/inst.svg" alt="instagram-2" class="social-icon"></li>
+            <li><img src="./images/Contact/be.svg" alt="BE" class="social-icon"></li>
+            <li><img src="./images/Contact/basketball.svg" alt="" class="social-icon"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="privacy-terms">
+         Privacy Policy  |  Terms and Conditions
+        </p>
+        <hr class="hr-1">
+        <hr class="hr-2">
+        <p class="footer-subtitle">© 2023 Ideapeel Inc. All Rights Reserved</p>
+        <p class="privacy1-terms">
+          Privacy Policy  |  Terms and Conditions
+         </p>
+      </div>
+    </footer>
 </body>
 </html>
