@@ -5,12 +5,12 @@
 }
 
 .privacy-terms {
-  color: #ACACAC;
+  color: #acacac;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
-  margin-bottom: 1.25rem
+  margin-bottom: 1.25rem;
 }
 
 .privacy1-terms {
@@ -18,8 +18,8 @@
 }
 
 .hr-1 {
-  background: #BBB;
-  margin-bottom: 1.25rem
+  background: #bbb;
+  margin-bottom: 1.25rem;
 }
 
 .hr-2 {
@@ -27,25 +27,21 @@
 }
 
 .footer-subtitle {
-  color: #ACACAC;
-  /* text-align: center; */
+  color: #acacac;
   font-family: "Poppins", sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
 }
 
 @media (min-width: 768px) {
-  .hr-1, .privacy-terms {
+  .hr-1,
+  .privacy-terms {
     display: none;
   }
 
   .hr-2 {
     display: block;
-    background: #BBB;
-  }
-
-  .privacy1-terms {
-    display: block;
+    background: #bbb;
   }
 
   .footer-container {
@@ -54,8 +50,8 @@
   }
 
   .privacy1-terms {
-    color: #ACACAC;
-    text-align: center;
+    display: block;
+    color: #acacac;
     font-family: "Poppins", sans-serif;
     font-size: 0.875rem;
     font-weight: 500;
@@ -66,5 +62,4 @@
   .footer-subtitle {
     text-align: left;
   }
-
 }

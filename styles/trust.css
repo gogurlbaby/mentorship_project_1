@@ -45,7 +45,7 @@
 
 @media (min-width: 768px) {
   .trusted-section {
-    padding: 6.5rem 4.5rem 0rem;
+    padding: 6.5rem 4.5rem 0;
   }
 }
 
@@ -55,4 +55,3 @@
     max-width: 50%;
   }
 }
-

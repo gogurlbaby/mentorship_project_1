@@ -44,12 +44,12 @@ li {
   .contact-section {
     padding: 7.32rem 4.5rem 3.323rem;
   }
-  
+
   .contact-subtitle {
-      font-size: 2.875rem;
-  } 
+    font-size: 2.875rem;
+  }
 }
- 
+
 @media (min-width: 1200px) {
   .contact-section {
     padding: 8.875rem 24.125rem 4.375rem;
@@ -57,6 +57,5 @@ li {
 
   .contact-title {
     font-size: 1rem;
-  } 
+  }
 }
-  
