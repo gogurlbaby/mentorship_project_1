@@ -3,9 +3,344 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/trust.css">
+    <link rel="stylesheet" href="./styles/features.css">
+    <link rel="stylesheet" href="./styles/statistics.css">
+    <link rel="stylesheet" href="./styles/portfolio.css">
+    <link rel="stylesheet" href="./styles/blog.css">
+    <link rel="stylesheet" href="./styles/testimonials.css">
+    <link rel="stylesheet" href="./styles/faq.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="./js/navbar.js" defer></script>
     <title>Project 1-Portfolio</title>
 </head>
 <body>
-    <h1>Advanced CSS</h1>
+    <!-- Navbar  -->
+    <header>
+      <nav>
+        <div class="navbar">
+         <div class="navbar-flex">
+          <img src="./images/xest-folio.svg" alt="logo" class="logo">
+          <div class="menu-button">
+            <i data-feather="menu" onclick="showOverlay()"></i> 
+          </div>
+         </div>
+          <!-- Overlay for Small Screens-->
+          <div id="overlay">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Service</a></li>
+              <li><a href="#blogs">Blogs</a></li>
+              <li><a href="#blogs"> FAQ</a></li>
+              <li>
+                <button type="button" class="btn navbar-btn">Contact Me</button>
+              </li>
+            </ul>  
+            <div class="close_icon">
+              <i data-feather="x" onclick="hideOverlay()"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero-section">
+        <div class="hero">
+          <img src="./images/hero.svg" alt="hero-image" class="hero-image">
+          <div class="text-button">
+            <h1 class="title">
+                Miami 
+              <span class="hero-title">
+                Walker
+                <!-- <span class="highlight-letter">r</span> -->
+             </span>
+           </h1>
+            <p class="hero-subtitle">
+             Award Wining product designer based in Georgia. 
+             We create user-friendly interfaces for fast-growing startups.
+            </p>
+            <button type="button" class="btn hero-btn">Book A Call</button>
+          </div>
+        </div>
+    </section>
+     <!-- Trusted Companies Section -->
+    <section class="trusted-section">
+      <p class="trusted">Trusted By</p>
+      <div class="carousel-container">
+        <div>
+          <ul class="carousel">
+            <li><img src="./images/logo-05.svg" alt="Company 1" class="carousel-logo"></li>
+            <li><img src="./images/logo-04.svg" alt="Company 2" class=" carousel-logo"></li>
+            <li><img src="./images/logo-03.svg" alt="Comapany 3" class="carousel-logo"></li>
+            <li><img src="./images/logo-02.svg" alt="Company 4" class="carousel-logo"></li>
+            <li><img src="./images/logo-01.svg" alt="Company 5" class="carousel-logo"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Features Section -->
+    <section class="features-section">
+      <div>
+        <h4 class="heading features">Features</h4>
+        <h2 class="section-title">Giving Your Business Some Great Ideas</h2>
+        <p class="business-description">
+        Every designer needs the right tools to do the perfect job. 
+        Thankfully, we can do that. I design products that are more than pretty. 
+        I make them shippable and usable.
+        </p>
+        <button type="button" class="btn features-btn">Contact US</button>
+      </div>
+        <div class="product-features">
+          <div class="product item1">
+            <img src="./images/Features/image-6.svg" alt="Features Image" class="product-image">
+            <h4 class="product-title">UX Experience</h4>
+            <p class="product-description">I design products that are more than pretty. I make them  usable.</p>
+          </div>
+          <div class="product item2">
+            <img src="./images/Features/image-19.svg" alt="Features Image" class="product-image">
+            <h4 class="product-title">Product Analysis</h4>
+            <p class="product-description">I design products that are more than pretty. I make them  usable.</p>
+          </div>
+          <div class="product item3">
+            <img src="./images/Features/image-18.svg" alt="Features Image" class="product-image">
+            <h4 class="product-title">UI Design</h4>
+            <p class="product-description">I design products that are more than pretty. I make them  usable.</p>
+          </div>
+          <div class="product item4">
+            <img src="./images/Features/image-20.svg" alt="Features Image" class="product-image">
+            <h4 class="product-title">Product Design</h4>
+            <p class="product-description">I design products that are more than pretty. I make them  usable.</p>
+          </div>
+        </div>
+    </section>
+    <!-- Statistics for Large Screens -->
+    <div class="statistics">
+     <div>
+       <img src="./images/Statistics/k.svg" alt="">
+       <p class="description">Project Complete</p>
+     </div>
+     <div>
+      <img src="./images/Statistics/7k.svg" alt="">
+      <p class="description">Happy Client</p>
+     </div>
+     <div>
+      <img src="./images/Statistics/10k.svg" alt="">
+      <p  class="description">Years Experience</p>
+     </div>
+     <div>
+      <img src="./images/Statistics/270k.svg" alt="">
+      <p class="description">Win Awards</p>
+     </div>
+    </div>
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+      <div class="heading-btn_container">
+        <div>
+          <h4 class="heading portfolio">Portfolio</h4>
+          <h2 class="section-title best-works">Some Of Our Best Works</h2>
+        </div>
+        <button type="button" class="btn portfolio-btn">Load More</button>
+      </div>
+      <!-- For small screens -->
+      <div class="images-container">
+        <img src="./images/Portfolio/rectangle-38.svg" alt="Portfolio Image" class="portfolio-image">
+        <img src="./images/Portfolio/rectangle-39.svg" alt="Portfolio Image" class="portfolio-image">
+        <img src="./images/Portfolio/rectangle-40.svg" alt="Portfolio Image" class="portfolio-image">
+      </div>
+      <!-- For Large screens -->
+      <div class="portfolio-container">
+        <div class="portfolio">
+          <img src="./images/Portfolio/rectangle-38.svg" alt="Portfolio Image" class="portfolio-images">
+          <img src="./images/Portfolio/rectangle-39.svg" alt="Portfolio Image" class="portfolio-images">
+          <img src="./images/Portfolio/rectangle-40.svg" alt="Portfolio Image" class="portfolio-images">
+          <img src="./images/Portfolio/rectangle-38.svg" alt="Portfolio Image" class="portfolio-images">
+          <img src="./images/Portfolio/rectangle-39.svg" alt="Portfolio Image" class="portfolio-images">
+          <img src="./images/Portfolio/rectangle-40.svg" alt="Portfolio Image" class="portfolio-images">
+          <img src="./images/Portfolio/rectangle-38.svg" alt="Portfolio Image" class="portfolio-images">
+          <img src="./images/Portfolio/rectangle-39.svg" alt="Portfolio Image" class="portfolio-images">
+          <img src="./images/Portfolio/rectangle-40.svg" alt="Portfolio Image" class="portfolio-images">
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section -->
+    <section class="blog-section">
+      <div class="heading-btn_container">
+        <div>
+          <h4 class="heading blog">Latest Blog</h4>
+          <h2 class="section-title news">Check Some of Latest <br/> News & Articles</h2>
+        </div>
+        <button type="button" class="btn blog-btn">Load More</button>
+      </div>
+      <div class="blog-content-container">
+        <div class="blog-image-container">
+          <img src="./images/Blog/image-16.svg" alt="Blog Image" class="blog-image">
+        </div>
+        <div class="blog-item-container">
+          <div class="ui-date">
+            <p>UI Design</p>
+            <span>|</span>
+            <p>22 May  2023</p>
+          </div>
+            <h4 class="blog-heading">What is UI Design in Front End Design?</h4>
+            <p class="blog-description">
+             But I must explain to you how all this mistaken idea of denouncing pleasure and 
+             praising pain was born and I will give you a complete account of the system
+            </p>
+            <button type="button" class="read-more-btn">
+             Read More
+             <i data-feather="arrow-up-right" width="15px" class="arrow-up"></i> 
+            </button>
+        </div>
+      <div class="blog-image-container">
+        <img src="./images/Blog/image-16.svg" alt="Blog Image" class="blog-image">
+      </div>
+      <div class="blog-item-container">
+        <div class="ui-date">
+          <p>UI Design</p>
+          <span>|</span>
+          <p>22 May  2023</p>
+        </div>
+          <h4 class="blog-heading">What is UI Design in Front End Design?</h4>
+          <p class="blog-description">
+           But I must explain to you how all this mistaken idea of denouncing pleasure and 
+           praising pain was born and I will give you a complete account of the system
+          </p>
+          <button class="read-more-btn">
+           Read More
+           <i data-feather="arrow-up-right"  width="15px" class="arrow-up"></i> 
+          </button>
+      </div>
+    </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="testimonial-section">
+      <div class="testimonial-text">
+        <h4 class="heading testimonial-title">Testimonials</h4>
+        <p class="section-title testimonial-subtitle">What our customer say</p>
+      </div>
+      <div class="testimonial-container">
+      <div class="testimony-container">
+        <img src="./images/Testimonials/icon.svg" alt="icon" class="icon">
+        <p class="testimony">“Now, i can track my business activity with easier and have a great understandable to operate the products</p>
+        <div class="testimonial-flex">
+        <div class="image-text-flex">
+          <img src="./images/Testimonials/ellipse-1.svg" alt="testimony-icon" class="icon">
+          <h4 class="name">Berry Gunawan</h4>
+        </div>
+         <div class="image-rate-flex">
+          <img src="./images/Testimonials/star.svg" alt="star-icon" class="icon">
+         <p class="rate">3.5</p>
+         </div>
+        </div>
+      </div>
+
+      <div class="testimony-container ">
+        <img src="./images/Testimonials/icon.svg" alt="icon" class="icon">
+        <p class="testimony">“Now, i can track my business activity with easier and have a great understandable to operate the products</p>
+        <div class="testimonial-flex">
+         <div class="image-text-flex">
+          <img src="./images/Testimonials/ellipse-2.svg" alt="testimony-icon" class="icon">
+         <h4 class="name">Janne Cooper</h4>
+         </div>
+         <div class="image-rate-flex">
+          <img src="./images/Testimonials/star.svg" alt="star-icon" class="icon">
+         <p class="rate">3.5</p>
+         </div>
+        </div>
+      </div>
+
+      <div class="testimony-container">
+        <img src="./images/Testimonials/icon.svg" alt="icon" class="icon">
+        <p class="testimony">“Now, i can track my business activity with easier and have a great understandable to operate the products</p>
+        <div class="testimonial-flex">
+         <div class="image-text-flex">
+          <img src="./images/Testimonials/ellipse-3.svg" alt="icon" class="icon">
+         <h4 class="name">Cobocannaeru</h4>
+         </div>
+         <div class="image-rate-flex">
+          <img src="./images/Testimonials/star.svg" alt="star-icon" class="icon">
+         <p class="rate">3.5</p>
+         </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="faq-container">
+        <div class="faq-text-flex">
+          <h4 class="heading faq-title">Faqs</h4>
+          <h2 class="section-title mind-question">Be Kind to Your Mind Question & Answer</h2>
+          <p class="faq-subtitle">
+            All Your Qustions are in A document, in question and answer format, 
+            that introduces newcomers to a topic or answers common questions.
+          </p>
+        </div>
+
+        <div class="faq-item-flex">
+          <div class="faq-item">
+            <span class="question">How can we help your business?</span>
+            <img src="./images/arrow.svg" alt="dropdown">
+          </div>
+          <div class="faq-item">
+            <span class="question">What are the advantages of Bisnext</span>
+            <img src="./images/arrow.svg" alt="dropdown">
+          </div>
+          <div class="faq-item">
+            <span class="question">Let’s find an office near you?</span>
+            <img src="./images/arrow.svg" alt="dropdown">
+          </div>
+          <div class="faq-item">
+            <span class="question">How IT consultancy experts work?</span>
+            <img src="./images/arrow.svg" alt="dropdown">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="contact-container">
+        <h4 class="heading contact-title">Have you project in mind?</h4>
+        <h2 class="section-title contact-subtitle">Let’s Make Something Great Together!</h2>
+        <div class="contact-flex">
+          <p class="contact-text">CONTACT WITH US</p>
+          <img src="./images/Contact/arrow.svg" alt="arrow" class="arrow-icon">
+        </div>
+        <img src="./images/xest-folio.svg" alt="logo" class="contact-logo">
+        <div>
+          <ul class="socials">
+            <li><img src="./images/Contact/facebook.svg" alt="facebook" class="social-icon"></li>
+            <li><img src="./images/Contact/instagram.svg" alt="instagram-1" class="social-icon"></li>
+            <li><img src="./images/Contact/inst.svg" alt="instagram-2" class="social-icon"></li>
+            <li><img src="./images/Contact/be.svg" alt="BE" class="social-icon"></li>
+            <li><img src="./images/Contact/basketball.svg" alt="" class="social-icon"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer-mobile">
+      <div class="footer-container">
+        <p class="privacy-terms">
+         Privacy Policy  |  Terms and Conditions
+        </p>
+        <hr class="hr">
+        <p class="footer-subtitle">© 2023 Ideapeel Inc. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <footer class="footer-desktop">
+      <hr class="hr">
+      <div class="footer-container">
+        <p class="footer-subtitle">© 2023 Ideapeel Inc. All Rights Reserved</p>
+        <p class="privacy-terms">Privacy Policy  |  Terms and Conditions</p>
+      </div>
+    </footer>
 </body>
 </html>

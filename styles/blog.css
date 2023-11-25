@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+.blog-section {
+  padding: 3.375rem 1.5rem 4.688rem;
+  width: 100%;
+  background-color: #181818;
+}
+
+.news {
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.blog-btn {
+  background-color: #fff;
+  color: #181818;
+  font-family: "Urbanist", sans-serif;
+  font-size: 0.813rem;
+  margin-bottom: 2.188rem;
+}
+
+.blog-image {
+  width: 100%;
+}
+
+.blog-image-container:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.blog-item-container {
+  padding: 0.5rem 1.5rem;
+  max-width: 82%;
+  background-color: #181818;
+  border: 1px solid transparent;
+  text-align: left;
+  position: relative;
+  left: 60px;
+  bottom: 70px;
+}
+
+.ui-date {
+  color: #888;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.467rem;
+  font-weight: 500;
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.blog-heading {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 135%;
+  margin-bottom: 0.688rem;
+}
+
+.blog-description {
+  color: #aaa;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.625rem;
+  font-weight: 500;
+  line-height: 140%;
+  margin-bottom: 0.875rem;
+  text-align: left;
+}
+
+.read-more-btn {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 1.656px;
+  text-transform: uppercase;
+}
+
+.arrow-up {
+  position: relative;
+  top: 8px;
+}
+
+@media (min-width: 768px) {
+  .blog-section {
+    padding: 10rem 4.5rem;
+    background-color: #181818;
+  }
+
+  .blog-content-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .blog-image-container:not(:first-child) {
+    margin-top: 0;
+  }
+
+  .blog-image {
+    width: 400%;
+  }
+
+  .blog-item-container {
+    position: relative;
+    left: -60px;
+    bottom: -120px;
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem 4.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .blog-section {
+    padding: 10rem 9.375rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .blog-content-container {
+    gap: 6rem;
+  }
+
+  .blog-item-container {
+    padding: 0.5rem 4.5rem;
+  }
+}

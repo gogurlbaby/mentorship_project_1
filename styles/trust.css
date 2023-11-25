@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+.trusted-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5.625rem 2rem 0;
+}
+
+.trusted {
+  color: #12141d;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.771px;
+  margin-bottom: 1.5rem;
+}
+
+.carousel {
+  display: flex;
+  gap: 1rem;
+}
+
+.carousel-logo {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .trusted-section {
+    padding: 6.5rem 4.5rem 0;
+  }
+
+  .carousel {
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel {
+    gap: 5rem;
+  }
+}
