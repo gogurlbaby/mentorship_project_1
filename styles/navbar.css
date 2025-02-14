@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap');
+
+nav {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+/* To Hide on Large Screens */
+.menu-button {
+  display: none;
+}
+
+.close_icon {
+  display: none;
+}
+
+.navbar ul {
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--white-color);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.navbar-btn {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 1.25rem 1.875rem;
+}
+
+/* Media Queries to Show Menu Button on Small Screens */
+@media (max-width: 767px) {
+  .navbar-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-button {
+    display: block;
+    cursor: pointer;
+  }
+
+  .close_icon {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: var(--white-color);
+  }
+
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay-background);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+}
+
+/* Media Queries for Large Screens */
+@media (min-width: 768px) {
+  .nav {
+    padding: 1.5rem 4.5rem;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.25rem;
+  }
+
+  ul li {
+    margin-top: 0 !important;
+  }
+
+  .navbar a {
+    color: var(--navbar-list-items-color);
+  }
+}
+
+@media (min-width: 1200px) {
+  nav {
+    padding: 1.5rem 9.375rem;
+  }
+}
+
+/* Overlay Animation for Small Screens */
+.slide-from-right {
+  animation-name: slideFromRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slideFromRight {
+  from {
+    /* Start the animation from the right edge */
+    transform: translateX(100%);
+  }
+
+  to {
+    /* Slide the overlay to the left */
+    transform: translateX(0);
+  }
+}

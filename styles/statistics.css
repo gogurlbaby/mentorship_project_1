@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600&display=swap');
+
+.statistics {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .statistics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 0 4.5rem;
+  }
+
+  .description {
+    color: #000;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 140%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .statistics {
+    padding: 0 9.375rem;
+    gap: 9rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}

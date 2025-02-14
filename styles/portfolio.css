@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap');
+
+.portfolio-section {
+  padding: 0 1.5rem 6.25rem;
+}
+
+.images-container {
+  margin-top: 4.063rem;
+}
+
+.portfolio-image {
+  width: 100%;
+  margin-bottom: 1.625rem;
+}
+
+.best-works {
+  margin-bottom: 3rem;
+}
+
+.portfolio-btn {
+  font-family: "Urbanist", sans-serif;
+}
+
+@media (max-width: 767px) {
+  .portfolio-container,
+  .portfolio-images {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .images-container,
+  .portfolio-image {
+    display: none;
+  }
+
+  .portfolio-section {
+    padding: 10.75rem 4.5rem 9.25rem;
+  }
+
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.375rem;
+  }
+
+  .portfolio-images {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio-section {
+    padding: 10.75rem 8.5rem 9.25rem;
+  }
+}
